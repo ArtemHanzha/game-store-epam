@@ -54,6 +54,19 @@ namespace Task1.Infrastructure.Automapper
                     s => Mapper.Map<Comment, CommentViewModel>(s.Parrent)));
 
             #endregion
+
+            #region GameVM -> Game
+
+            CreateMap<GameViewModel, Game>()
+                .ForMember(g => g.Id, opt => opt.MapFrom(s => s.Id))
+                .ForMember(g => g.Name, opt => opt.MapFrom(s => s.Name))
+                .ForMember(g => g.Description, opt => opt.MapFrom(s => s.Description))
+                .ForMember(g => g.Key, opt => opt.MapFrom(s => s.Key))
+                .ForMember(g => g.Genres, opt => opt.Ignore())
+                .ForMember(g => g.Platforms, opt => opt.Ignore())
+                .ForMember(g => g.Comments, opt => opt.Ignore());
+
+            #endregion
         }
     }
 }

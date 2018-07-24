@@ -48,7 +48,8 @@ namespace Task.Services.Services
 
         public Genre GetByName(string name)
         {
-            var genres = _repository.Get(g => string.Equals(g.Name, name, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
+            //var genres = _repository.Get(g => string.Equals(g.Name, name, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
+            var genres = _repository.Get(g => g.Name.ToLower() == name.ToLower()).FirstOrDefault();
             return genres;
         }
     }

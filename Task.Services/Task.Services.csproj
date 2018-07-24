@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\Generic\INameFilterService.cs" />
     <Compile Include="Interfaces\Generic\IReadOnlyService.cs" />
     <Compile Include="Interfaces\Generic\IService.cs" />
     <Compile Include="Interfaces\ICommentService.cs" />

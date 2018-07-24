@@ -4,8 +4,8 @@ using Task.Services.Interfaces.Generic;
 
 namespace Task.Services.Interfaces
 {
-    public interface IGenreService : IService<Genre>
+    public interface IGenreService : IService<Genre>, INameFilterService<Genre>
     {
-        Genre GetByName(string name);
+        
     }
 }

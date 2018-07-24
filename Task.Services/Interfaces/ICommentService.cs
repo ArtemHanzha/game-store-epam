@@ -4,7 +4,7 @@ using Task.Services.Interfaces.Generic;
 
 namespace Task.Services.Interfaces
 {
-    public interface ICommentService : IService<Comment>
+    public interface ICommentService : INameFilterService<Comment>, IService<Comment>
     {
         IEnumerable<Comment> GetByGameKey(string gameKey);
 

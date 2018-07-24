@@ -53,7 +53,8 @@ namespace Task.Services.Services
 
         public PlatformType GetByName(string name)
         {
-            var item = _repository.Get(p => string.Equals(p.Type, name, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
+            //var item = _repository.Get(p => string.Equals(p.Type, name, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
+            var item = _repository.Get(g => g.Type.ToLower() == name.ToLower()).FirstOrDefault();
             return item;
         }
     }

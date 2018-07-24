@@ -72,5 +72,10 @@ namespace Task.Services.Services
 
             _unitOfWork.Save();
         }
+
+        public Comment GetByName(string name)
+        {
+            return _repository.Get(c => c.Name == name).FirstOrDefault();
+        }
     }
 }

@@ -3,8 +3,8 @@ using Task.Services.Interfaces.Generic;
 
 namespace Task.Services.Interfaces
 {
-    public interface IPlatformTypeService : IService<PlatformType>
+    public interface IPlatformTypeService : IService<PlatformType>, INameFilterService<PlatformType>
     {
-        PlatformType GetByName(string name);
+        
     }
 }

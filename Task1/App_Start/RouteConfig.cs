@@ -18,7 +18,12 @@ namespace Task1
             routes.MapRoute(
                 name: "CreateGame",
                 url: "{controller}/new",
-                defaults: new { controller = "Game", action = "NewGame"});
+                defaults: new { controller = "Games", action = "NewGame"});
+
+            routes.MapRoute(
+                name: "UpdateGame",
+                url: "{controller}/update",
+                defaults: new { controller = "Games", action = "UpdateGame" });
 
             routes.MapRoute(
                 name: "Default",

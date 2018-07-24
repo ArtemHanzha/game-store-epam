@@ -5,7 +5,7 @@ using Task.Contracts.Modes;
 
 namespace Task.DAL.Context
 {
-    public class DbInitializer : DropCreateDatabaseAlways<GameStoreContext>
+    public class DbInitializer : DropCreateDatabaseIfModelChanges<GameStoreContext>
     {
         protected override void Seed(GameStoreContext context)
         {
