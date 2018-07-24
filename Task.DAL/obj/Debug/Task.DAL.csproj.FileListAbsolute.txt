@@ -1,0 +1,15 @@
+C:\Users\Artem_Hanzha\source\repos\Task\Task.DAL\obj\Debug\Task.DAL.csprojAssemblyReference.cache
+C:\Users\Artem_Hanzha\source\repos\Task\Task.DAL\obj\Debug\Task.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Artem_Hanzha\source\repos\Task\Task.DAL\bin\Debug\Task.DAL.dll.config
+C:\Users\Artem_Hanzha\source\repos\Task\Task.DAL\bin\Debug\Task.DAL.dll
+C:\Users\Artem_Hanzha\source\repos\Task\Task.DAL\bin\Debug\Task.DAL.pdb
+C:\Users\Artem_Hanzha\source\repos\Task\Task.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Artem_Hanzha\source\repos\Task\Task.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Artem_Hanzha\source\repos\Task\Task.DAL\bin\Debug\Task.Contracts.dll
+C:\Users\Artem_Hanzha\source\repos\Task\Task.DAL\bin\Debug\Task.Contracts.pdb
+C:\Users\Artem_Hanzha\source\repos\Task\Task.DAL\bin\Debug\Task.Contracts.dll.config
+C:\Users\Artem_Hanzha\source\repos\Task\Task.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Artem_Hanzha\source\repos\Task\Task.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Artem_Hanzha\source\repos\Task\Task.DAL\obj\Debug\Task.DAL.csproj.CopyComplete
+C:\Users\Artem_Hanzha\source\repos\Task\Task.DAL\obj\Debug\Task.DAL.dll
+C:\Users\Artem_Hanzha\source\repos\Task\Task.DAL\obj\Debug\Task.DAL.pdb

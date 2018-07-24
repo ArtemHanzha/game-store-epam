@@ -1,0 +1,15 @@
+C:\Users\Artem_Hanzha\source\repos\Task\Task.Services\obj\Debug\Task.Services.csprojAssemblyReference.cache
+C:\Users\Artem_Hanzha\source\repos\Task\Task.Services\obj\Debug\Task.Services.csproj.CoreCompileInputs.cache
+C:\Users\Artem_Hanzha\source\repos\Task\Task.Services\bin\Debug\Task.Services.dll
+C:\Users\Artem_Hanzha\source\repos\Task\Task.Services\bin\Debug\Task.Services.pdb
+C:\Users\Artem_Hanzha\source\repos\Task\Task.Services\bin\Debug\Task.Contracts.dll
+C:\Users\Artem_Hanzha\source\repos\Task\Task.Services\bin\Debug\Task.DAL.dll
+C:\Users\Artem_Hanzha\source\repos\Task\Task.Services\bin\Debug\EntityFramework.dll
+C:\Users\Artem_Hanzha\source\repos\Task\Task.Services\bin\Debug\Task.Contracts.pdb
+C:\Users\Artem_Hanzha\source\repos\Task\Task.Services\bin\Debug\Task.Contracts.dll.config
+C:\Users\Artem_Hanzha\source\repos\Task\Task.Services\bin\Debug\Task.DAL.pdb
+C:\Users\Artem_Hanzha\source\repos\Task\Task.Services\bin\Debug\Task.DAL.dll.config
+C:\Users\Artem_Hanzha\source\repos\Task\Task.Services\bin\Debug\EntityFramework.xml
+C:\Users\Artem_Hanzha\source\repos\Task\Task.Services\obj\Debug\Task.Services.csproj.CopyComplete
+C:\Users\Artem_Hanzha\source\repos\Task\Task.Services\obj\Debug\Task.Services.dll
+C:\Users\Artem_Hanzha\source\repos\Task\Task.Services\obj\Debug\Task.Services.pdb
