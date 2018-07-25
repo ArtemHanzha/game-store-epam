@@ -1,4 +1,5 @@
 ﻿using Ninject.Modules;
+using Task.Contracts.Interfaces;
 using Task.Services.Interfaces;
 using Task.Services.Services;
 
@@ -17,6 +18,8 @@ namespace Task.Infrastructure.DependencyResolution
             Bind<IGameService>().To<GameService>();
             Bind<IGenreService>().To<GenreService>();
             Bind<IPlatformTypeService>().To<PlatformTypeService>();
+
+            Bind<ILoggerManager>().To<LoggerManagerService>();
         }
     }
 }

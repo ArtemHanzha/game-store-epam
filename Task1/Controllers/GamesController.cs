@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Net.Http;
@@ -8,6 +9,7 @@ using System.Web.Script.Serialization;
 using AutoMapper;
 using Microsoft.Ajax.Utilities;
 using Task.Contracts.Abstracts;
+using Task.Contracts.Interfaces;
 using Task.Contracts.Modes;
 using Task.Services.Interfaces;
 using Task.Services.Interfaces.Generic;
@@ -16,23 +18,27 @@ using Task1.Models.ViewModels.Sigle;
 
 namespace Task1.Controllers
 {
-    public class GamesController : Controller
+    public class GamesController : BaseController
     {
         private readonly IGameService _gameService;
         private readonly IGenreService _genreService;
         private readonly IPlatformTypeService _platformService;
         private readonly ICommentService _commentService;
+        //private readonly ILoggerManager _logger;
 
         public GamesController(
             IGameService gameService,
             IGenreService genreService,
             IPlatformTypeService platformService,
-            ICommentService commentService)
+            ICommentService commentService,
+            ILoggerManager logger)
+        : base(logger)
         {
             _gameService = gameService;
             _genreService = genreService;
             _platformService = platformService;
             _commentService = commentService;
+            // _logger = logger;
         }
 
         //TODO: ??
@@ -56,9 +62,14 @@ namespace Task1.Controllers
             };
 
             if (_gameService.GetByKey(game.Key) != null)
+            {
+                LogUserActivity($"Creating game error.");
                 return "Error! Same game-key is already exists.";
+            }
 
             _gameService.Create(game);
+
+            LogUserActivity($"Game {game.Name} created.");
 
             return "Succeeded!";
         }
@@ -77,9 +88,12 @@ namespace Task1.Controllers
                 game.Comments = GetListFromRequest("comments", _commentService) as ICollection<Comment>;
 
                 _gameService.Update(game);
+
+                LogUserActivity($"Game key:{game.Key} updated.");
+
                 return "Succeeded.";
             }
-
+            LogUserActivity($"Game update error.");
             return "Error! Game not found.";
         }
 
@@ -107,7 +121,13 @@ namespace Task1.Controllers
             else if (!key.IsNullOrWhiteSpace())
                 _gameService.DeleteByKey(key);
             else
+            {
+                LogUserActivity($"Game key:{key}, id:{id.Value} delete error.");
                 return "Error! Bad parametrs.";
+            }
+
+            if (id != null)
+                LogUserActivity($"Game key:{key}, id:{id.Value} deleted.");
             return "Succeeded.";
         }
 
@@ -130,6 +150,8 @@ namespace Task1.Controllers
         [HttpPost]
         public string RemoveGame(string key, string id)
         {
+            LogUserActivity($"Remove game triggered! This may not to happen...");
+
             if (!key.IsNullOrWhiteSpace())
             {
                 if (_gameService.GetByKey(key) != null)
@@ -187,6 +209,8 @@ namespace Task1.Controllers
 
             _commentService.CreateForComment(comment, commentVm.GameId, commentVm.ParrentId);
 
+            LogUserActivity($"Comment set.");
+
             return "Succeded.";
         }
 
@@ -208,10 +232,14 @@ namespace Task1.Controllers
             if (game != null)
             {
                 string filepath = @"C:\Users\Artem_Hanzha\fastFiles\SomeBinaryTestFile.txt";
+
+                LogUserActivity($"Download game");
+
                 return File(filepath, System.Net.Mime.MediaTypeNames.Application.Octet, Path.GetFileName(filepath));
             }
             else
             {
+                LogUserActivity($"Download game FALUE.");
                 return null;
             }
         }

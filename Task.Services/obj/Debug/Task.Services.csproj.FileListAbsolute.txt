@@ -28,3 +28,8 @@ D:\Projects\game-store-epam\Task.Services\obj\Debug\Task.Services.csproj.CoreCom
 D:\Projects\game-store-epam\Task.Services\obj\Debug\Task.Services.csproj.CopyComplete
 D:\Projects\game-store-epam\Task.Services\obj\Debug\Task.Services.dll
 D:\Projects\game-store-epam\Task.Services\obj\Debug\Task.Services.pdb
+D:\Projects\game-store-epam\Task.Services\bin\Debug\NLog.config
+D:\Projects\game-store-epam\Task.Services\bin\Debug\NLog.dll
+D:\Projects\game-store-epam\Task.Services\bin\Debug\NLog.xml
+D:\Projects\game-store-epam\Task.Services\bin\Debug\Ninject.dll
+D:\Projects\game-store-epam\Task.Services\bin\Debug\Ninject.xml

@@ -48,15 +48,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstracts\AbstractDbObject.cs" />
+    <Compile Include="Interfaces\ILoggerManager.cs" />
     <Compile Include="Modes\Comment.cs" />
     <Compile Include="Modes\Game.cs" />
     <Compile Include="Modes\Genre.cs" />
     <Compile Include="Modes\PlatformType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />

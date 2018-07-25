@@ -33,6 +33,7 @@
     <Reference Include="AutoMapper, Version=7.0.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.7.0.1\lib\net45\AutoMapper.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Build.Framework" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
@@ -93,6 +94,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Task.Contracts\Task.Contracts.csproj">
+      <Project>{91EB3847-5D4E-4176-8E21-3DF29F6CDBCA}</Project>
+      <Name>Task.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Task.DAL\Task.DAL.csproj">
       <Project>{ABF9C96C-5090-447D-BA5B-D7D245902E00}</Project>
       <Name>Task.DAL</Name>

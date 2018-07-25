@@ -28,3 +28,4 @@ D:\Projects\game-store-epam\Task.DAL\obj\Debug\Task.DAL.csproj.CoreCompileInputs
 D:\Projects\game-store-epam\Task.DAL\obj\Debug\Task.DAL.csproj.CopyComplete
 D:\Projects\game-store-epam\Task.DAL\obj\Debug\Task.DAL.dll
 D:\Projects\game-store-epam\Task.DAL\obj\Debug\Task.DAL.pdb
+D:\Projects\game-store-epam\Task.DAL\bin\Debug\NLog.config

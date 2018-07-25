@@ -238,3 +238,6 @@ D:\Projects\game-store-epam\Task1\obj\Debug\Task1.csproj.CoreCompileInputs.cache
 D:\Projects\game-store-epam\Task1\obj\Debug\Task1.csproj.CopyComplete
 D:\Projects\game-store-epam\Task1\obj\Debug\Task1.dll
 D:\Projects\game-store-epam\Task1\obj\Debug\Task1.pdb
+D:\Projects\game-store-epam\Task1\bin\NLog.config
+D:\Projects\game-store-epam\Task1\bin\NLog.dll
+D:\Projects\game-store-epam\Task1\bin\NLog.xml

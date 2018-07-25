@@ -88,3 +88,6 @@ D:\Projects\game-store-epam\Task.Infrastructure\obj\Debug\Task.Infrastructure.cs
 D:\Projects\game-store-epam\Task.Infrastructure\obj\Debug\Task.Infrastructure.csproj.CopyComplete
 D:\Projects\game-store-epam\Task.Infrastructure\obj\Debug\Task.Infrastructure.dll
 D:\Projects\game-store-epam\Task.Infrastructure\obj\Debug\Task.Infrastructure.pdb
+D:\Projects\game-store-epam\Task.Infrastructure\bin\Debug\NLog.config
+D:\Projects\game-store-epam\Task.Infrastructure\bin\Debug\NLog.dll
+D:\Projects\game-store-epam\Task.Infrastructure\bin\Debug\NLog.xml

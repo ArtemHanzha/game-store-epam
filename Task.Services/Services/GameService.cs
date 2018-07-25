@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using Task.Contracts.Interfaces;
 using Task.Contracts.Modes;
 using Task.DAL.Interfaces;
 using Task.Services.Interfaces;
@@ -12,6 +13,7 @@ namespace Task.Services.Services
     {
         private readonly IRepository<Game> _repository;
         private readonly IUnitOfWork _unitOfWork;
+        //private readonly ILoggerManager _logger;
 
         public GameService(
             IRepository<Game> repository,
