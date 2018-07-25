@@ -8,6 +8,6 @@ namespace Task.Services.Interfaces
     {
         IEnumerable<Comment> GetByGameKey(string gameKey);
 
-        void CreateForComment(Comment item, int gameId, int parrentCommentId = -1);
+        void CreateForComment(Comment item, int gameId, int parrentId = -1);
     }
 }

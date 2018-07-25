@@ -1,4 +1,4 @@
-﻿namespace Task1.ViewModel
+﻿namespace Task1.Models.ViewModels
 {
     public abstract class BaseViewModel
     {

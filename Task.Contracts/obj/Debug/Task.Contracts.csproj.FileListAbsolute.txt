@@ -10,3 +10,15 @@ C:\Users\Artem_Hanzha\source\repos\Task\Task.Contracts\obj\Debug\Task.Contracts.
 C:\Users\Artem_Hanzha\source\repos\Task\Task.Contracts\obj\Debug\Task.Contracts.csproj.CopyComplete
 C:\Users\Artem_Hanzha\source\repos\Task\Task.Contracts\obj\Debug\Task.Contracts.dll
 C:\Users\Artem_Hanzha\source\repos\Task\Task.Contracts\obj\Debug\Task.Contracts.pdb
+D:\Projects\game-store-epam\Task.Contracts\bin\Debug\Task.Contracts.dll.config
+D:\Projects\game-store-epam\Task.Contracts\bin\Debug\Task.Contracts.dll
+D:\Projects\game-store-epam\Task.Contracts\bin\Debug\Task.Contracts.pdb
+D:\Projects\game-store-epam\Task.Contracts\bin\Debug\EntityFramework.dll
+D:\Projects\game-store-epam\Task.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\game-store-epam\Task.Contracts\bin\Debug\EntityFramework.xml
+D:\Projects\game-store-epam\Task.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\game-store-epam\Task.Contracts\obj\Debug\Task.Contracts.csprojAssemblyReference.cache
+D:\Projects\game-store-epam\Task.Contracts\obj\Debug\Task.Contracts.csproj.CoreCompileInputs.cache
+D:\Projects\game-store-epam\Task.Contracts\obj\Debug\Task.Contracts.csproj.CopyComplete
+D:\Projects\game-store-epam\Task.Contracts\obj\Debug\Task.Contracts.dll
+D:\Projects\game-store-epam\Task.Contracts\obj\Debug\Task.Contracts.pdb

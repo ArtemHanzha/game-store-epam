@@ -13,7 +13,7 @@ namespace Task.Contracts.Modes
         public string AuthorName { get; set; }
 
         [Required]
-        public Game Game { get; set; }
+        public virtual Game Game { get; set; }
 
         public ICollection<Comment> Replies { get; set; }
 

@@ -59,13 +59,19 @@ namespace Task.Services.Services
             _unitOfWork.Save();
         }
 
-        public void CreateForComment(Comment item, int gameId, int parrentCommentId = -1)
+        public void CreateForComment(Comment item, int gameId, int parrentId = -1)
         {
             var game = _gameRepository.Get(gameId);
-            var parrent = _repository.Get(parrentCommentId);
+            Comment parrent = null;
+
+            if(parrentId > 0)
+                parrent = _repository.Get(parrentId);
            
             item.Parrent = parrent;
             item.Game = game;
+
+            if(game.Comments == null)
+                game.Comments = new List<Comment>();
 
             game.Comments.Add(item);
             _repository.Create(item);

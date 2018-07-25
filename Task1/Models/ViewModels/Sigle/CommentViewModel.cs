@@ -1,4 +1,4 @@
-﻿namespace Task1.ViewModel.Sigle
+﻿namespace Task1.Models.ViewModels.Sigle
 {
     public class CommentViewModel : BaseViewModel
     {
@@ -8,6 +8,8 @@
 
         public string Title { get; set; }
 
-        public CommentViewModel Parrent { get; set; }
+        public int GameId { get; set; }
+
+        public int ParrentId { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Task1.ViewModel.Sigle;
+using Task1.Models.ViewModels.Sigle;
 
-namespace Task1.ViewModel
+namespace Task1.Models.ViewModels
 {
     public class GamesListviewModel
     {

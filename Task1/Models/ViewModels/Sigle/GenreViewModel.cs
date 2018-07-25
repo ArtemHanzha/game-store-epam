@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Task1.ViewModel.Sigle
+namespace Task1.Models.ViewModels.Sigle
 {
     public class GenreViewModel : BaseViewModel
     {

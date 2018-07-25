@@ -14,7 +14,7 @@ namespace Task.Services.Services
         private readonly IUnitOfWork _unitOfWork;
 
         public GameService(
-            IRepository<Game> repository, 
+            IRepository<Game> repository,
             IUnitOfWork unitOfWork)
         {
             _repository = repository;
@@ -47,6 +47,15 @@ namespace Task.Services.Services
         public void Create(Game item)
         {
             _repository.Create(item);
+            _unitOfWork.Save();
+        }
+
+        public void DeleteByKey(string key)
+        {
+            var game = _repository.Get(g => g.Key == key).FirstOrDefault();
+            if (game != null)
+                game.IsDeleted = true;
+            _repository.Update(game);
             _unitOfWork.Save();
         }
 

@@ -1,4 +1,4 @@
-﻿namespace Task1.ViewModel.Sigle
+﻿namespace Task1.Models.ViewModels.Sigle
 {
     public class PlatformTypeViewModel : BaseViewModel
     {

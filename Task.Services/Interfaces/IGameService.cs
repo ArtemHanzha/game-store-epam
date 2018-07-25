@@ -6,6 +6,8 @@ namespace Task.Services.Interfaces
 {
     public interface IGameService : IService<Game>
     {
+        void DeleteByKey(string key);
+
         Game GetByKey(string key);
 
         IEnumerable<Game> GetByGenre(string genre);

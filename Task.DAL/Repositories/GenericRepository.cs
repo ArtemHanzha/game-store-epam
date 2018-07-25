@@ -49,7 +49,10 @@ namespace Task.DAL.Repositories
 
         public void Update(T item)
         {
-            _context.Entry(item).State = EntityState.Modified;
+            var obj = Get(item.Id);
+            Clone(ref obj, item);
+
+            _context.Entry(obj).State = EntityState.Modified;
         }
 
         public void Delete(int itemId)
@@ -61,6 +64,18 @@ namespace Task.DAL.Repositories
         public void Create(T item)
         {
             _dbSet.Add(item);
+        }
+
+        private void Clone(ref T to, T from)
+        {
+            foreach (var prop in typeof(T).GetProperties())
+            {
+                if (prop.CanRead)
+                {
+                    var val = prop.GetValue(from, null);
+                    prop.SetValue(to, val);
+                }
+            }
         }
     }
 }
