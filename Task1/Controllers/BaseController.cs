@@ -15,7 +15,7 @@ namespace Task1.Controllers
         public void LogUserActivity(string action)
         {
             var ip = Request.UserHostAddress;
-            var query = Request.QueryString;
+            var query = Request.CurrentExecutionFilePath;
             
             _logger.LogInfo($"User: {ip}, query: {query}, triggered: {action}");
         }

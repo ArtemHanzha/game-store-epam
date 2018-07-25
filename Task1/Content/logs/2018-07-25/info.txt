@@ -1,1 +1,2 @@
 2018-07-25 17:22:03.9544|INFO|Task.Services.Services.LoggerManagerService|User: ::1, query: , triggered: Download game
+2018-07-25 17:24:55.0927|INFO|Task.Services.Services.LoggerManagerService|User: ::1, query: , triggered: Download game
